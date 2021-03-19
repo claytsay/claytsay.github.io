@@ -66,7 +66,7 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </Link>
             </li>
           )}
-          {(
+          {true && (
             <li className={classes.item}>
               <Link className={classes.link} to="/portfolio">
                 Portfolio
