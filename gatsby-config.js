@@ -1,75 +1,70 @@
 module.exports = {
   siteMetadata: {
     // Site URL for when it goes live
-    siteUrl: `https://elastic-meninsky-aa7c74.netlify.app/`,
+    siteUrl: `https://claytsay.github.io/`,
     // Your Name
-    name: 'Ryan Fitzgerald',
+    name: 'Clay Tsay',
     // Main Site Title
-    title: `Ryan Fitzgerald | Full-Stack Developer`,
+    title: `Clay Tsay | University Student`,
     // Description that goes under your name in main bio
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit, ipsum.`,
+    description: `A student double-majoring in computer science and chemical engineering.`,
     // Optional: Twitter account handle
-    author: `@rfitzio`,
+    author: `@claytsay`,
     // Optional: Github account URL
-    github: `https://github.com/ryanfitzgerald`,
+    github: `https://github.com/claytsay`,
     // Optional: LinkedIn account URL
-    linkedin: `https://www.linkedin.com/in/ryanafitzgerald/`,
+    linkedin: `https://www.linkedin.com/in/claytsay/`,
     // Content of the About Me section
-    about: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis porro cumque ea error ab voluptatem. Temporibus adipisci exercitationem similique itaque quibusdam laudantium, qui molestiae quas, aut amet animi id.`,
+    about: `I am interested in the application of computer science to solving problems in more traditional engineering fields, namely chemical engineering. My studies currently focus on machine learning, artificial intelligence, and computational methods in chemical engineering.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
-        name: 'Devfolio',
+        name: 'ssds',
         description:
-          'A zero-config and blazing fast personal site + blog built with GatsbyJs and TailwindCSS',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'A pair of Python and Deno libraries that implement high-performance data structures',
+        link: 'https://github.com/users/claytsay/projects/1',
       },
       {
-        name: 'ChromeExtensionKit',
+        name: 'person_simulator',
         description:
-          'Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates',
-        link: 'https://chromeextensionkit.com/?ref=devfolio',
-      },
-      {
-        name: 'Another Cool Project',
-        description:
-          'Lorem ipsum dolor sit amet consectetur adipisicing elit ducimus perferendis',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+          'A full-stack chatbot web app built with Node.js, React, and Python',
+        link: 'https://github.com/claytsay/person_simulator',
       },
     ],
     // Optional: List your experience, they must have `name` and `description`. `link` is optional.
     experience: [
       {
-        name: 'Acme Corp',
-        description: 'Full-Stack Developer, February 2020 - Present',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Amazon',
+        description: 'SDE Intern, May 2021 - August 2021',
+        link: '',
       },
       {
-        name: 'Globex Corp',
-        description: 'Full-Stack Developer, December 2017 - February 2020',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
-      },
-      {
-        name: 'Hooli',
-        description: 'Full-Stack Developer, May 2015 - December 2017',
-        link: 'https://github.com/RyanFitzgerald/devfolio',
+        name: 'Cognition and Action Lab',
+        description: 'Research Assistant, September 2019 - December 2019',
+        link: 'http://ivrylab.berkeley.edu/',
       },
     ],
     // Optional: List your skills, they must have `name` and `description`.
     skills: [
       {
-        name: 'Languages & Frameworks',
+        name: 'Languages',
         description:
-          'JavaScript (ES6+), Golang, Node.js, Express.js, React, Ruby on Rails, PHP',
+          'C, HTML/CSS, Java, JavaScript, MATLAB, Python, Wolfram Language',
+      },
+      {
+        name: 'Libraries & Frameworks',
+        description:
+          'Matplotlib, Node.js, NumPy, Pandas, PyTorch, SciPy, React',
       },
       {
         name: 'Databases',
-        description: 'MongoDB, PostreSQL, MySQL',
+        description:
+          'SQLite',
       },
       {
         name: 'Other',
         description:
-          'Docker, Amazon Web Services (AWS), CI / CD, Microservices, API design, Agile / Scrum',
+          'Linux, Microsoft Office',
       },
     ],
   },
@@ -119,7 +114,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `ADD YOUR TRACKING ID HERE`, // Optional Google Analytics
+        trackingId: `G-F29F4GE30X`, // Optional Google Analytics
       },
     },
     {
