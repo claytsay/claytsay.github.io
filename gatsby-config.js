@@ -49,12 +49,17 @@ module.exports = {
       {
         name: 'Languages',
         description:
-          'C, HTML/CSS, Java, JavaScript, MATLAB, Python, Wolfram Language',
+          'C, HTML/CSS, Java, JavaScript, MATLAB, Python, TypeScript, Wolfram Language',
       },
       {
         name: 'Libraries & Frameworks',
         description:
-          'Matplotlib, Node.js, NumPy, Pandas, PyTorch, SciPy, React',
+          'AWS CDK, Elasticsearch, Flink, Matplotlib, Node.js, NumPy, Pandas, PyTorch, SciPy, React',
+      },
+      {
+        name: 'Services',
+        description:
+          'AWS',
       },
       {
         name: 'Databases',
