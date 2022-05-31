@@ -35,8 +35,13 @@ module.exports = {
     experience: [
       {
         name: 'Amazon',
+        description: 'SDE, July 2022 - Present',
+        link: 'https://www.amazon.jobs/en/job_categories/software-development',
+      },
+      {
+        name: 'Amazon',
         description: 'SDE Intern, May 2021 - August 2021',
-        link: '',
+        link: 'https://www.amazon.jobs/en/job_categories/software-development',
       },
       {
         name: 'Cognition and Action Lab',
@@ -54,12 +59,12 @@ module.exports = {
       {
         name: 'Libraries & Frameworks',
         description:
-          'AWS CDK, Elasticsearch, Flink, Matplotlib, Node.js, NumPy, Pandas, PyTorch, SciPy, React',
+          'AWS CDK, Docker, Elasticsearch, Flink, Matplotlib, Node.js, NumPy, Pandas, PyTorch, SciPy, React',
       },
       {
         name: 'Services',
         description:
-          'AWS',
+          'AWS, Cloudflare',
       },
       {
         name: 'Databases',
