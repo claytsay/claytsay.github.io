@@ -5,9 +5,9 @@ module.exports = {
     // Your Name
     name: 'Clay Tsay',
     // Main Site Title
-    title: `Clay Tsay | University Student`,
+    title: `Clay Tsay | Software Engineer`,
     // Description that goes under your name in main bio
-    description: `A student double-majoring in computer science and chemical engineering.`,
+    description: `A software engineer with training in both computer science and chemical engineering.`,
     // Optional: Twitter account handle
     author: `@claytsay`,
     // Optional: Github account URL
@@ -15,7 +15,7 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/claytsay/`,
     // Content of the About Me section
-    about: `I am interested in the application of computer science to solving problems in more traditional engineering fields, namely chemical engineering. My studies currently focus on machine learning, artificial intelligence, and computational methods in chemical engineering.`,
+    about: `I am interested in the application of computer science to solving problems in more traditional engineering fields, namely chemical engineering. My college studies focused on machine learning, artificial intelligence, and computational methods in chemical engineering. My current work focuses on writing backend code for Alexa Music's cloud services.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
@@ -59,7 +59,7 @@ module.exports = {
       {
         name: 'Libraries & Frameworks',
         description:
-          'AWS CDK, Docker, Elasticsearch, Flink, Matplotlib, Node.js, NumPy, Pandas, PyTorch, SciPy, React',
+          'CDK, Docker, Elasticsearch, Flink, Guice, Matplotlib, Node.js, NumPy, Pandas, PySpark, PyTorch, SciPy, Spring, React',
       },
       {
         name: 'Services',
@@ -69,7 +69,7 @@ module.exports = {
       {
         name: 'Databases',
         description:
-          'SQLite',
+          'DynamoDB, RDS, SQLite',
       },
       {
         name: 'Other',
@@ -120,7 +120,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
