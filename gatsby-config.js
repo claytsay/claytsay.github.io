@@ -15,14 +15,14 @@ module.exports = {
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/claytsay/`,
     // Content of the About Me section
-    about: `I am interested in the application of computer science to solving problems in more traditional engineering fields, namely chemical engineering. My college studies focused on machine learning, artificial intelligence, and computational methods in chemical engineering. My current work focuses on writing backend code for Alexa Music's cloud services.`,
+    about: `I am interested in the application of computer science to solving problems in more traditional engineering fields, namely chemical engineering. My university studies focused on machine learning, artificial intelligence, and computational methods in chemical engineering. Currently, I work on LLMOps and backend development within Amazon's Alexa Music division.`,
     // Optional: List your projects, they must have `name` and `description`. `link` is optional.
     projects: [
       {
         name: 'ssds',
         description:
           'A pair of Python and Deno libraries that implement high-performance data structures',
-        link: 'https://github.com/users/claytsay/projects/1',
+        link: 'https://github.com/claytsay/ssds-python',
       },
       {
         name: 'person_simulator',
@@ -35,12 +35,17 @@ module.exports = {
     experience: [
       {
         name: 'Amazon',
-        description: 'SDE, July 2022 - Present',
+        description: 'SDE II (L5), July 2024 - Present',
         link: 'https://www.amazon.jobs/en/job_categories/software-development',
       },
       {
         name: 'Amazon',
-        description: 'SDE Intern, May 2021 - August 2021',
+        description: 'SDE I (L4), July 2022 - July 2024',
+        link: 'https://www.amazon.jobs/en/job_categories/software-development',
+      },
+      {
+        name: 'Amazon',
+        description: 'SDE Intern (L4), May 2021 - August 2021',
         link: 'https://www.amazon.jobs/en/job_categories/software-development',
       },
       {
@@ -54,27 +59,27 @@ module.exports = {
       {
         name: 'Languages',
         description:
-          'C, HTML/CSS, Java, JavaScript, MATLAB, Python, TypeScript, Wolfram Language',
+          'C, HTML/CSS, Java, JavaScript, MATLAB, Python, Rust, TypeScript, Wolfram Language',
       },
       {
         name: 'Libraries & Frameworks',
         description:
-          'CDK, Docker, Elasticsearch, Flink, Guice, Matplotlib, Node.js, NumPy, Pandas, PySpark, PyTorch, SciPy, Spring, React',
+          'AWS CDK, Docker, Elasticsearch, Flink, Guice, Matplotlib, Node.js, NumPy, Pandas, PySpark, PyTorch, SciPy, Seaborn, Spring, React',
       },
       {
         name: 'Services',
         description:
-          'AWS, Cloudflare',
+          'AWS ECS, AWS SageMaker, Cloudflare',
       },
       {
         name: 'Databases',
         description:
-          'DynamoDB, RDS, SQLite',
+          'AWS DynamoDB, AWS RDS, SQLite',
       },
       {
         name: 'Other',
         description:
-          'Linux, Microsoft Office',
+          'Chinese (Mandarin), Linux, Microsoft Office, Prompt Engineering',
       },
     ],
   },
