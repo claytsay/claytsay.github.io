@@ -1,8 +1,7 @@
-import { Link } from 'gatsby';
-import get from 'lodash/get';
-import React from 'react';
+import * as React from "react"
+import { Link } from "gatsby"
 
-import profileImg from '../../images/profile.jpg';
+import profileImg from "../images/profile.jpg"
 
 const classes = {
   wrapper: 'block mb-6 md:flex',
@@ -15,12 +14,12 @@ const classes = {
   item: 'inline list-none pr-4',
   link:
     'inline-block py-2 font-semibold text-xs text-gray-600 hover:text-black',
-};
+}
 
 const Header = ({ metadata = {}, noBlog = false }) => {
-  const twitter = get(metadata, 'author', false);
-  const github = get(metadata, 'github', false);
-  const linkedin = get(metadata, 'linkedin', false);
+  const twitter = metadata.author || false
+  const github = metadata.github || false
+  const linkedin = metadata.linkedin || false
 
   return (
     <div className={classes.wrapper}>
@@ -66,17 +65,15 @@ const Header = ({ metadata = {}, noBlog = false }) => {
               </Link>
             </li>
           )}
-          {true && (
-            <li className={classes.item}>
-              <Link className={classes.link} to="/portfolio">
-                Portfolio
-              </Link>
-            </li>
-          )}
+          <li className={classes.item}>
+            <Link className={classes.link} to="/portfolio">
+              Portfolio
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

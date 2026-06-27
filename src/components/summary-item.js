@@ -1,18 +1,18 @@
-import { Link } from 'gatsby';
-import React from 'react';
+import * as React from "react"
+import { Link } from "gatsby"
 
 const classes = {
   wrapper: 'mb-6',
   name: 'font-semibold text-gray-900 pb-1',
   description: 'text-md text-gray-600 font-light',
-};
+}
 
 const SummaryItem = ({ name, description, link = false, internal = false }) => {
-  let linkContent;
+  let linkContent
   if (internal) {
-    linkContent = <Link to={link}>{name}</Link>;
+    linkContent = <Link to={link}>{name}</Link>
   } else {
-    linkContent = <a href={link}>{name}</a>;
+    linkContent = <a href={link}>{name}</a>
   }
 
   return (
@@ -26,7 +26,7 @@ const SummaryItem = ({ name, description, link = false, internal = false }) => {
       </h3>
       <p className={classes.description}>{description}</p>
     </div>
-  );
-};
+  )
+}
 
-export default SummaryItem;
+export default SummaryItem

@@ -1,6 +1,6 @@
-import React from 'react';
+import * as React from "react"
 
-import Section from '../section';
+import Section from "./section"
 
 const SectionAbout = ({ about }) => {
   return (
@@ -9,7 +9,7 @@ const SectionAbout = ({ about }) => {
         <p>{about}</p>
       </div>
     </Section>
-  );
-};
+  )
+}
 
-export default SectionAbout;
+export default SectionAbout

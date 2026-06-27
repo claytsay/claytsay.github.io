@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from "react"
 
 const classes = {
   wrapper: 'block pt-12 md:flex',
@@ -6,7 +6,7 @@ const classes = {
   heading:
     'font-xs font-light tracking-widest text-sm text-gray-600 leading-normal uppercase',
   content: 'flex-none text-lg text-gray-600 font-light md:flex-1 md:pl-20',
-};
+}
 
 const Section = ({ title, children }) => {
   return (
@@ -16,7 +16,7 @@ const Section = ({ title, children }) => {
       </div>
       <div className={classes.content}>{children}</div>
     </div>
-  );
-};
+  )
+}
 
-export default Section;
+export default Section

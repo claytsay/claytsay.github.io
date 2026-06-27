@@ -1,14 +1,14 @@
-import React from 'react';
+import * as React from "react"
 
-import Section from '../section';
-import SummaryItem from '../summary-item';
+import Section from "./section"
+import SummaryItem from "./summary-item"
 
 const SectionProjects = ({ projects }) => {
-  if (!projects.length) return null;
+  if (!projects.length) return null
 
   return (
     <Section title="Projects">
-      {projects.map((project) => (
+      {projects.map(project => (
         <SummaryItem
           key={project.name}
           name={project.name}
@@ -17,7 +17,7 @@ const SectionProjects = ({ projects }) => {
         />
       ))}
     </Section>
-  );
-};
+  )
+}
 
-export default SectionProjects;
+export default SectionProjects

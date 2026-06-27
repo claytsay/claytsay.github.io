@@ -1,17 +1,16 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import * as React from "react"
+import { Link } from "gatsby"
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
 const classes = {
   title: 'text-lg font-bold',
   link: 'underline',
-};
+}
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="Not found" />
     <h1 className={classes.title}>404: Not Found</h1>
     <p>
       You just hit a route that doesn't exist.{' '}
@@ -21,6 +20,8 @@ const NotFoundPage = () => (
       .
     </p>
   </Layout>
-);
+)
 
-export default NotFoundPage;
+export const Head = () => <Seo title="Not found" />
+
+export default NotFoundPage

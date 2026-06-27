@@ -1,12 +1,15 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
 module.exports = {
   siteMetadata: {
-    // Site URL for when it goes live
+    // Site URL
     siteUrl: `https://claytsay.github.io/`,
-    // Your Name
+    // Your name
     name: 'Clay Tsay',
-    // Main Site Title
+    // Main site title
     title: `Clay Tsay | Software Engineer`,
-    // Description that goes under your name in main bio
+    // Description that goes under your name in the main bio
     description: `A software engineer with training in both computer science and chemical engineering.`,
     // Optional: Twitter account handle
     author: `@claytsay`,
@@ -14,77 +17,97 @@ module.exports = {
     github: `https://github.com/claytsay`,
     // Optional: LinkedIn account URL
     linkedin: `https://www.linkedin.com/in/claytsay/`,
-    // Content of the About Me section
+    // Content of the "About Me" section
     about: `I am interested in the application of computer science to solving problems in more traditional engineering fields, namely chemical engineering. My university studies focused on machine learning, artificial intelligence, and computational methods in chemical engineering. Currently, I work on LLMOps and backend development within Amazon's Alexa Music division.`,
-    // Optional: List your projects, they must have `name` and `description`. `link` is optional.
+    // Optional: List your projects; they must have `name` and `description` (`link` is optional)
     projects: [
       {
-        name: 'ssds',
+        name: `ssds`,
         description:
-          'A pair of Python and Deno libraries that implement high-performance data structures',
-        link: 'https://github.com/claytsay/ssds-python',
+          `A pair of Python and Deno libraries that implement high-performance data structures`,
+        link: `https://github.com/claytsay/ssds-python`,
       },
       {
-        name: 'person_simulator',
+        name: `person_simulator`,
         description:
-          'A full-stack chatbot web app built with Node.js, React, and Python',
-        link: 'https://github.com/claytsay/person_simulator',
+          `A full-stack chatbot web app built with Node.js, React, and Python`,
+        link: `https://github.com/claytsay/person_simulator`,
       },
     ],
-    // Optional: List your experience, they must have `name` and `description`. `link` is optional.
+    // Optional: List your experiences; they must have `name` and `description` (`link` is optional)
     experience: [
       {
-        name: 'Amazon',
-        description: 'SDE II (L5), July 2024 - Present',
-        link: 'https://www.amazon.jobs/en/job_categories/software-development',
+        name: `Amazon`,
+        description: `SDE II (L5), July 2024 - Present`,
+        link: `https://www.amazon.jobs/en/job_categories/software-development`,
       },
       {
-        name: 'Amazon',
-        description: 'SDE I (L4), July 2022 - July 2024',
-        link: 'https://www.amazon.jobs/en/job_categories/software-development',
+        name: `Amazon`,
+        description: `SDE I (L4), July 2022 - July 2024`,
+        link: `https://www.amazon.jobs/en/job_categories/software-development`,
       },
       {
-        name: 'Amazon',
-        description: 'SDE Intern (L4), May 2021 - August 2021',
-        link: 'https://www.amazon.jobs/en/job_categories/software-development',
+        name: `Amazon`,
+        description: `SDE Intern (L4), May 2021 - August 2021`,
+        link: `https://www.amazon.jobs/en/job_categories/software-development`,
       },
       {
-        name: 'Cognition and Action Lab',
-        description: 'Research Assistant, September 2019 - December 2019',
-        link: 'http://ivrylab.berkeley.edu/',
+        name: `Cognition and Action Lab`,
+        description: `Research Assistant, September 2019 - December 2019`,
+        link: `http://ivrylab.berkeley.edu/`,
       },
     ],
-    // Optional: List your skills, they must have `name` and `description`.
+    // Optional: List your skills; they must have `name` and `description`
     skills: [
       {
-        name: 'Languages',
+        name: `Languages`,
         description:
-          'C, HTML/CSS, Java, JavaScript, MATLAB, Python, Rust, TypeScript, Wolfram Language',
+          `C, HTML/CSS, Java, JavaScript, MATLAB, Python, Rust, TypeScript, Wolfram Language`,
       },
       {
-        name: 'Libraries & Frameworks',
+        name: `Libraries & Frameworks`,
         description:
-          'AWS CDK, Docker, Elasticsearch, Flink, Guice, Matplotlib, Node.js, NumPy, Pandas, PySpark, PyTorch, SciPy, Seaborn, Spring, React',
+          `AWS CDK, Docker, Elasticsearch, Flink, Guice, Matplotlib, Node.js, NumPy, Pandas, PySpark, PyTorch, SciPy, Seaborn, Spring, React`,
       },
       {
-        name: 'Services',
+        name: `Services`,
         description:
-          'AWS ECS, AWS SageMaker, Cloudflare',
+          `AWS ECS, AWS SageMaker, Cloudflare`,
       },
       {
-        name: 'Databases',
+        name: `Databases`,
         description:
-          'AWS DynamoDB, AWS RDS, SQLite',
+          `AWS DynamoDB, AWS RDS, SQLite`,
       },
       {
-        name: 'Other',
+        name: `Other`,
         description:
-          'Chinese (Mandarin), Linux, Microsoft Office, Prompt Engineering',
+          `Chinese (Mandarin), Linux, Microsoft Office, Prompt Engineering`,
       },
     ],
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `G-F29F4GE30X`, // Optional Google Analytics
+      },
+    },
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Clay Tsay | Software Engineer`,
+        short_name: `Clay Tsay`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/icon.png`,
+      },
+    },
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -99,6 +122,7 @@ module.exports = {
         name: `blog`,
       },
     },
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -118,30 +142,8 @@ module.exports = {
           },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`,
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: `G-F29F4GE30X`, // Optional Google Analytics
-      },
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `devfolio`,
-        short_name: `devfolio`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`, // This color appears on mobile
-        display: `minimal-ui`,
-        icon: `src/images/icon.png`,
-      },
-    },
   ],
-};
+}

@@ -1,14 +1,14 @@
-import React from 'react';
+import * as React from "react"
 
-import Section from '../section';
-import SummaryItem from '../summary-item';
+import Section from "./section"
+import SummaryItem from "./summary-item"
 
 const SectionExperience = ({ experience }) => {
-  if (!experience.length) return null;
+  if (!experience.length) return null
 
   return (
     <Section title="Experience">
-      {experience.map((item) => (
+      {experience.map(item => (
         <SummaryItem
           key={item.name}
           name={item.name}
@@ -17,7 +17,7 @@ const SectionExperience = ({ experience }) => {
         />
       ))}
     </Section>
-  );
-};
+  )
+}
 
-export default SectionExperience;
+export default SectionExperience
